@@ -47,24 +47,17 @@ function playSE(seName) {
         try {
             sounds[seName].currentTime = 0;
             sounds[seName].play().catch(e => {});
-        } catch (error) {
-
-        }
-    } else {
-
+        } catch (error) {}
     }
 }
 
 function startBGM(bgmName) {
     if (bgm[bgmName]) {
         bgm[bgmName].play().catch(e => {
-
             window.addEventListener('click', () => {
-                bgm[bgmName].play().catch(err => );
+                bgm[bgmName].play().catch(err => {});
             }, { once: true });
         });
-    } else {
-
     }
 }
 
