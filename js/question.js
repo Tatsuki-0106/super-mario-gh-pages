@@ -45,7 +45,6 @@ function checkQuestionBlockHit(px, py) {
 
         if (!state.hasStarted) {
             state.hasStarted = true;
-            の秘密タイマーが始動したおぶ！！！`);
         }
 
         state.totalCoins++;
