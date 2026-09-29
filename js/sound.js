@@ -66,8 +66,6 @@ function stopAllBGM() {
         try {
             track.pause();
             track.currentTime = 0;
-        } catch (e) {
-
-        }
+        } catch (e) {}
     });
 }
