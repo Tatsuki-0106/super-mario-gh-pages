@@ -7,18 +7,16 @@ function updatePauseInput(keys, dtModifier = 1.0) {
         pauseKeyCooldown -= dtModifier;
     }
 
-    if (window.isTitleScreen || (typeof player !== 'undefined' && (player.playerState === 0x03 || player.playerState === 0x0C))) { [3]
-        window.isPaused = false; [3]
-        return; [3]
+    if (window.isTitleScreen || (typeof player !== 'undefined' && (player.playerState === 0x03 || player.playerState === 0x0C))) {
+        window.isPaused = false;
+        return;
     }
 
-    if ((keys['p'] || keys['P']) && pauseKeyCooldown <= 0) { [3]
+    if ((keys['p'] || keys['P']) && pauseKeyCooldown <= 0) {
         window.isPaused = !window.isPaused;
         pauseKeyCooldown = 15;
 
         if (window.isPaused) {
-             [3]
-
             if (typeof playSE === 'function') {
                 playSE('pause');
             }
