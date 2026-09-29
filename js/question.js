@@ -79,7 +79,6 @@ function checkQuestionBlockHit(px, py) {
             nextBlockVisualId = EMPTY_TILE_ID;
             tileMap[row][col] = 0;
             delete multiCoinBlockStates[blockKey];
-            へ完全大粉砕トグル変身おぶ！！！`);
         } else {
 
             tileMap[row][col] = 0;
