@@ -21,15 +21,13 @@ function updatePauseInput(keys, dtModifier = 1.0) {
                 playSE('pause');
             }
 
-            Object.values(bgm).forEach(track => { [3]
-                if (!track.paused) { [3]
+            Object.values(bgm).forEach(track => {
+                if (!track.paused) { 
                     track._wasPlayingBeforePause = true;
-                    track.pause(); [3]
+                    track.pause(); 
                 }
-            });
+            }); // ← ここで missing だった }); を補完
         } else {
-             [3]
-
             if (typeof playSE === 'function') {
                 playSE('pause');
             }
@@ -45,6 +43,6 @@ function updatePauseInput(keys, dtModifier = 1.0) {
 }
 
 function drawPauseOverlay() {
-
     return;
 }
+
