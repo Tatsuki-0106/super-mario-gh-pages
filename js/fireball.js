@@ -46,7 +46,6 @@ function shootFireball() {
     if (typeof playSE === 'function') {
         playSE('fireball');
     }
-    `);
 }
 
 function updateFireballs(dtModifier = 1.0) {
