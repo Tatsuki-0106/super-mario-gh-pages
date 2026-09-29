@@ -1,10 +1,6 @@
-// =================================================================
-// 🪠 bonus.js : 地下ボーナスステージ（エリア$0C）専用タイルマップデータ
-// =================================================================
-const BONUS_MAP_WIDTH = 16;   // 地下ステージの横幅（1画面分など）
-const BONUS_MAP_HEIGHT = 15;  // 縦15マス
+const BONUS_MAP_WIDTH = 16;
+const BONUS_MAP_HEIGHT = 15;
 
-// 0: 空中 / 1: 地面 / 4: 硬いブロック / 7,8: 天井の土管パーツなど
 const MASTER_BONUS_MAP = [
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -23,19 +19,13 @@ const MASTER_BONUS_MAP = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 ];
 
-// 地下エリア背景色（ファミコンの真っ黒背景を再現）
 const BONUS_BACKGROUND_COLOR = '#000000';
 
-// ゲーム中に書き換える用の動的配列枠
 let bonusTileMap = [];
 
-/**
- * 🔄 地下マップをいつでも最初の初期状態に完全復元クローンさせる関数
- */
 function resetBonusMapToDefault() {
     bonusTileMap = JSON.parse(JSON.stringify(MASTER_BONUS_MAP));
-    console.log("🪠 地下ボーナスマップを新品状態へリセットしたお！");
+
 }
 
-// ゲーム起動時に最初の1回目をクローン生成！
 resetBonusMapToDefault();
