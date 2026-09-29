@@ -149,8 +149,6 @@ function loadStageSprites(isUnderground) {
         coinSprites[2].src = itemPath + 'coin_animation3.png';
         coinSprites[3].src = itemPath + 'coin_animation4.png';
     }
-
-    `);
 }
 
 loadStageSprites(false);
