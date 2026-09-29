@@ -34,10 +34,10 @@ function updatePauseInput(keys, dtModifier = 1.0) {
                 playSE('pause');
             }
 
-            Object.values(bgm).forEach(track => { [3]
-                if (track._wasPlayingBeforePause) { [3]
-                    track.play().catch(e => ); [3]
-                    track._wasPlayingBeforePause = false; [3]
+            Object.values(bgm).forEach(track => {
+                if (track._wasPlayingBeforePause) {
+                    track.play().catch(e => {});
+                    track._wasPlayingBeforePause = false;
                 }
             });
         }
