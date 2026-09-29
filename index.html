@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Mario Bros.</title>
+    <link rel="icon" href="sprite/items/mushroom.png">
+    <style>
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('fonts/PressStart2P.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #000; /* 真っ黒より少しグレーにするとCRTが映えます */
+}
+
+canvas {
+    image-rendering: pixelated;
+    transform: scale(2);
+    transform-origin: center; 
+    position: relative;
+}
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="256" height="240"></canvas>
+
+    <!-- JSフォルダの中身を順番に読み込む -->
+    <script src="js/config.js"></script>
+    <script src="js/bonus.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/brick.js"></script>
+    <script src="js/question.js"></script>
+    <script src="js/pipe.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/coin.js"></script>
+    <script src="js/mushroom.js"></script>
+    <script src="js/flower.js"></script>
+    <script src="js/star.js"></script>
+    <script src="js/fireball.js"></script>
+    <script src="js/kuribo.js"></script>
+    <script src="js/nokonoko.js"></script>
+    <script src="js/goalpole.js"></script>
+    <script src="js/title.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/scoretext.js"></script>
+    <script src="js/middle.js"></script>
+    <script src="js/pause.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
