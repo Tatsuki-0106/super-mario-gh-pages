@@ -22,9 +22,7 @@ function spawnScoreEffect(mapX, mapY, amount) {
             frameBuffer: 0,
             isGoalScore: false
         });
-
-        }, ${Math.floor(screenY)})`);
-    }
+    } // 👑 ゴミの行を丸ごと粉砕撤去してスッキリ閉じるおぶ！！！
 }
 
 function updateScoreEffects(dtModifier = 1.0) {
