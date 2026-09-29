@@ -46,7 +46,7 @@ function playSE(seName) {
     if (sounds[seName]) {
         try {
             sounds[seName].currentTime = 0;
-            sounds[seName].play().catch(e => );
+            sounds[seName].play().catch(e => {});
         } catch (error) {
 
         }
