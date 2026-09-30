@@ -6,6 +6,8 @@ This is a browser-based action game that recreates the mechanics of the 2D actio
 This is a browser-based action game that recreates the gameplay mechanics of the 2D action game *Super Mario Bros.*!
 Simply download the files and open `index.html` to start playing Mario right away!
 
+[GitHub Pages link](https://tatsuki-0106.github.io/super-mario-gh-pages/)
+
 ## Support
 
 
