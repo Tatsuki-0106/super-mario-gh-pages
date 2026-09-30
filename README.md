@@ -1,3 +1,5 @@
+![Screenshot](mario_screenshot.png)
+
 # Super Mario GitHub Pages
 This is a browser-based action game that recreates the mechanics of the 2D action game **"Super Mario Bros."**!
 
